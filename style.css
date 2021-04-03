@@ -105,7 +105,7 @@ input,button{
   align-items: center;
 }
 .list-item > * {
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 .task-checkbox {
@@ -116,9 +116,6 @@ input,button{
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
-.task-edit-box {
-  width: 226px
 }
 .delete:hover {
   color: #cf2323;
@@ -133,21 +130,21 @@ input,button{
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task-completed-label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list-item .edit-box {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode .edit-box {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+.edit-mode .task-label {
   display:none;
 }
